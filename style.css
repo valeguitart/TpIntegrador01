@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+/* NavBar */
+header{
+    width: 100%;
+    background-color: #f4bfd9;
+    padding: 0;
+    color: #000;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+header label:hover{
+    color: #ee4d95;
+}
+
+ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+}
+
+.Menu a:hover{
+    color: #ee4d95;
+    background: #f681bc36;
+    
+}
+
+li a{
+    display: block;
+    padding: 15px 20px;
+    color: #000;
+    text-decoration: none;
+     
+}
+
+/*Portada Alusiva*/
+
+.Banner{
+    padding: 0 35px;
+    background-image:url(./assets/FondoDeLaPag.jpg);
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* .Banner::before{
+    content: "";
+    background: #ffffff3b;
+    position:absolute;
+    width: 100%;
+    height: 40vh;
+    justify-content: center;
+    left: 0;
+} */
+
+.contenido-banner{
+    position: relative;
+    color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .contenido-banner h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+
+.contenido-banner h3 span{
+    font-weight: 600;
+} */
+
+.Productos{
+    text-decoration: none;
+    color: black;
+    border: 1px solid #e1c0d8;
+    padding: 20px 40px ;
+    align-self: baseline;
+    background-color: #e1c0d8;
+    transition: all 0.3s;
+}
+
+.Productos:hover{
+    background: #dba9ce;
+}
+
+/*RESPONSIVE*/
+@media (max-width:768px) {
+    header label{
+        display: block;
+    }
+
+    .Menu{
+        position:absolute;
+        background-color: #f4bfd9;
+        width: 45%;
+        margin-left: -45%;
+        transition: 0.5s;
+    }
+
+    .Menu ul{
+        flex-direction: column;
+    }
+
+    .Menu li{
+        border-top: 1px solid #fff;
+    }
+
+    #btn-menu:checked ~ .Menu{
+        margin: 0;
+    }  
+}
+
