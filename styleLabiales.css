@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
+body{
+    background-color: #f4bfd9;
+}
+
+/* NavBar */
+header{
+    width: 100%;
+    background-color: #f4bfd9;
+    padding: 0;
+    color: #000;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo a{
+    color: #000;
+    font-size: 25px;
+    padding: 20px 0 0 0;
+    /* font-weight: bold; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;    
+    display: grid;
+    justify-content:center;
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label {
+    display: none;
+    width: 30px;
+    /* height: 30px; */
+    padding: 10px;
+}
+
+header label:hover{
+    color: #ee4d95;
+}
+
+ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+}
+
+.Menu a:hover{
+    color: #ee4d95;
+    background: #f681bc36;
+    
+}
+
+li a{
+    display: block;
+    padding: 15px 20px;
+    color: #000;
+    text-decoration: none;
+     
+}
+
+/*Portada Alusiva*/
+
+.Banner{
+    padding: 0 35px;
+    background-image:url(./assets/PortadaDeLabios.jpg);
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/*RESPONSIVE*/
+@media (max-width:768px) {
+    header label{
+        display: block;
+    }
+
+    .Menu{
+        position:absolute;
+        background-color: #f4bfd9;
+        width: 45%;
+        margin-left: -45%;
+        transition: 0.5s;
+    }
+
+    .Menu ul{
+        flex-direction: column;
+    }
+
+    .Menu li{
+        border-top: 1px solid #fff;
+    }
+
+    #btn-menu:checked ~ .Menu{
+        margin: 0;
+    }  
+}
