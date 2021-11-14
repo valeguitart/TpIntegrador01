@@ -76,6 +76,48 @@ li a{
     background-position: center;
 }
 
+/* Imagenes Labiales */
+.izquierda{
+    width: 290px;
+    margin: 15px 0 0 10px;
+    box-shadow: 0 0 5px 0 #53464cb4;
+    float: left;
+    padding: 15px;
+
+}
+
+h3{
+    margin: 30px 0 0 0;
+    padding: 0 0 0 350px;
+}
+
+p{
+    margin: 17px 0 0 0;
+    padding: 0 0 0 350px; 
+}
+
+.tituloizquierda{
+    padding: 7px 0 0 10px;
+}
+
+img.separacion{
+    width: 290px;
+    margin: 15px 0 0 10px;
+    box-shadow: 0 0 5px 0 #53464cb4;
+    padding: 15px;
+    margin-left: 130px;
+}
+
+.item{
+    max-width: 100%;
+    display: block;
+    background: #b6b1b4;
+    padding: 1em;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.603);
+    text-align: center; 
+    text-decoration: none;   
+}
+
 /*RESPONSIVE*/
 @media (max-width:768px) {
     header label{
